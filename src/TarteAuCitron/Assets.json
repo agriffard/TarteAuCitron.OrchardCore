@@ -1,0 +1,20 @@
+[
+  {
+    "inputs": [
+      "node_modules/tarteaucitronjs/tarteaucitron.js"
+    ],
+    "output": "wwwroot/Scripts/tarteaucitron.js"
+  },
+  {
+    "inputs": [
+      "node_modules/tarteaucitronjs/tarteaucitron.services.js"
+    ],
+    "output": "wwwroot/Scripts/tarteaucitron.services.js"
+  },
+  {
+    "inputs": [
+      "node_modules/tarteaucitronjs/css/tarteaucitron.css"
+    ],
+    "output": "wwwroot/Scripts/css/tarteaucitron.css"
+  }
+]

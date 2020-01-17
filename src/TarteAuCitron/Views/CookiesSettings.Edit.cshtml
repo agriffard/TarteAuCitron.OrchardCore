@@ -1,0 +1,105 @@
+@using TarteAuCitron.OrchardCore.ViewModels;
+@model CookiesSettingsViewModel;
+
+<h3>@T["Cookies Settings"]</h3>
+
+<div class="form-group row" asp-validation-class-for="ServicesScript">
+    <div class="col-lg">
+        <label asp-for="ServicesScript">@T["Services Script"]</label>
+        <textarea asp-for="ServicesScript" class="form-control"></textarea>
+        <span asp-validation-for="ServicesScript"></span>
+        <span class="hint">@T["The script for the services. Ex:"] <a href="https://opt-out.ferank.eu/en/install/" target="_blank">https://opt-out.ferank.eu/en/install/</a></span>
+    </div>
+</div>
+<div class="form-group row" asp-validation-class-for="PrivacyUrl">
+    <div class="col-lg">
+        <label asp-for="PrivacyUrl">@T["Cookie Name"]</label>
+        <input asp-for="PrivacyUrl" class="form-control" />
+        <span asp-validation-for="PrivacyUrl"></span>
+        <span class="hint">@T["The privacy url."]</span>
+    </div>
+</div>
+<div class="form-group row" asp-validation-class-for="CookieName">
+    <div class="col-lg">
+        <label asp-for="CookieName">@T["Cookie Name"]</label>
+        <input asp-for="CookieName" class="form-control" />
+        <span asp-validation-for="CookieName"></span>
+        <span class="hint">@T["The cookie name."]</span>
+    </div>
+</div>
+<div class="form-group row" asp-validation-class-for="Orientation">
+    <div class="col-lg">
+        <label asp-for="Orientation">@T["Orientation"]</label>
+        <select asp-for="Orientation" class="form-control">
+            <option value="bottom">Bottom</option>
+            <option value="middle">Middle</option>
+            <option value="top">Top</option>
+        </select>
+        <span asp-validation-for="Orientation"></span>
+        <span class="hint">@T["The banner position."]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="ShowAlertSmall" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="ShowAlertSmall">@T["Show alert"]</label>
+        <span class="hint">@T["Show the small banner on bottom right"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="Cookieslist" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="Cookieslist">@T["Cookies list"]</label>
+        <span class="hint">@T["Show the cookie list"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="AdBlocker" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="AdBlocker">@T["AdBlocker"]</label>
+        <span class="hint">@T["Show a Warning if an adblocker is detected"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="AcceptAllCta" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="AcceptAllCta">@T["Accept all Cta"]</label>
+        <span class="hint">@T["Show the accept all button when highPrivacy is on"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="HighPrivacy" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="HighPrivacy">@T["High Privacy"]</label>
+        <span class="hint">@T["Disable auto consent"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="HandleBrowserDNTRequest" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="HandleBrowserDNTRequest">@T["Handle Browser DNT Request"]</label>
+        <span class="hint">@T["If Do Not Track == 1, disallow all"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="RemoveCredit" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="RemoveCredit">@T["Remove credit"]</label>
+        <span class="hint">@T["Remove credit link"]</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="custom-control custom-checkbox">
+        <input asp-for="MoreInfoLink" type="checkbox" class="custom-control-input">
+        <label class="custom-control-label" asp-for="MoreInfoLink">@T["More info link"]</label>
+        <span class="hint">@T["Show more info link"]</span>
+    </div>
+</div>
+<div class="form-group row" asp-validation-class-for="ReadMoreLink">
+    <div class="col-lg">
+        <label asp-for="ReadMoreLink">@T["Read More Link"]</label>
+        <input asp-for="ReadMoreLink" class="form-control" autocomplete="off" />
+        <span asp-validation-for="ReadMoreLink"></span>
+        <span class="hint">@T["Change the default readmore link"]</span>
+    </div>
+</div>

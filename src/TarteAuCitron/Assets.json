@@ -15,6 +15,6 @@
     "inputs": [
       "node_modules/tarteaucitronjs/css/tarteaucitron.css"
     ],
-    "output": "wwwroot/Scripts/css/tarteaucitron.css"
+    "output": "wwwroot/Styles/css/tarteaucitron.css"
   }
 ]
